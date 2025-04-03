@@ -22,11 +22,11 @@ test('Locators in Playwright', async ({ page }) => {
 
     // GetByPlaceholder, Xpath, CSSSelectors
     await page.goto('https://www.youtube.com/@testerstalk');
-    await page.getByPlaceholder('Search').fill('cypress by testers talk');
-    await page.locator('input[name="search_query"]').first().fill('playwright typescript by testers talk');
+    await page.getByPlaceholder('Search').fill('cypress');
+    await page.locator('input[name="search_query"]').first().fill('playwright typescript');
 
     // GetByTitle
     await page.goto('https://www.google.com/');
-    await page.getByTitle('Search').fill('playwright javascript by testers talk');
+    await page.getByTitle('Search').fill('playwright javascript');
 });
 

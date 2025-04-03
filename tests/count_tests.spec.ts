@@ -4,7 +4,7 @@ import { test } from '@playwright/test';
 
 test('Count total tests in playwright report', async ({ page }) => {
 
-    const reportPath = 'file:///path/PlaywrightTypeScriptTutorialFullCourse/screenshots/playwright-report/index.html';
+    const reportPath = 'file:///path/PlaywrightTypeScript/screenshots/playwright-report/index.html';
     await page.goto(reportPath);
 
    // Object to store the counts of tests (total, passed, failed, flaky) per spec file
